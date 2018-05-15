@@ -3,8 +3,8 @@
 #'
 #' @examples
 #' prt1 <- pareto(
-#'			top21_r = 4,
-#'			rest_r = 1 ) 
+#'		top21_r = 4,
+#'		rest_r = 1 ) 
 #'
 #' plot(1:121, prt1, type = 'l')
 #' @export
@@ -16,8 +16,8 @@
 #' library(VGAM)
 
 pareto <- function(
-	top21_r = 4,
-	rest_r = 1
+	top21_r = 4, ## the ratio of the number of votes of top21
+	rest_r = 1 ## the ratio of the number of votes of the rest
 ){
   if ( top21_r == rest_r ) {
   print('top21_r and rest_r may not be same')
